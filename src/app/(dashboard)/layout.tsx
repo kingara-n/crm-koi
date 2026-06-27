@@ -28,6 +28,7 @@ export default async function DashboardLayout({
           <a href="/clients" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-800">Clients</a>
           <a href="/trips" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-800">Trips</a>
           <a href="/sales" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-800">Sales Pipeline</a>
+          <a href="/documents" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-800">Document Vault</a>
           {profile?.role === 'admin' || profile?.role === 'accounting' ? (
              <a href="/billing" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-800">Billing</a>
           ) : null}
