@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from '@/utils/supabase/server'
-import { Database } from '@/types/supabase' // Assuming types will be generated
+
 
 export async function getQuotations() {
   const supabase = await createClient()
