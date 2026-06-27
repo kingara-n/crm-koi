@@ -1,4 +1,5 @@
 import { createClient } from '@/utils/supabase/server'
+import UploadDocumentButton from '@/components/UploadDocumentButton'
 
 export default async function DocumentsPage() {
   const supabase = await createClient()
@@ -8,7 +9,7 @@ export default async function DocumentsPage() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-900">Document Vault</h2>
-        <button className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Upload Document</button>
+        <UploadDocumentButton />
       </div>
 
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
